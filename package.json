@@ -3,10 +3,16 @@
   "version": "0.1.0",
   "description": "Home assignment for Squirro",
   "main": "server.js",
+  "scripts": {
+    "build": "webpack",
+    "watch": "webpack --watch"
+  },
   "author": "Manuel Hitz",
   "dependencies": {
     "express": "^4.15.3",
     "body-parser": "^1.17.2"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "webpack": "^3.4.1"
+  }
 }
