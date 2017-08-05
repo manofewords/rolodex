@@ -1,6 +1,8 @@
 var Backbone = require('backbone');
 var Mustache = require('mustache');
 
+require('../css/newCard.css')
+
 var NewCardTemplate = require('../templates/newCard.html');
 
 var NewCard = Backbone.View.extend({
