@@ -1,10 +1,23 @@
 var Backbone = require('backbone');
+var Mustache = require('mustache');
+
+var NewCardTemplate = require('../templates/newCard.html');
 
 var NewCard = Backbone.View.extend({
     el: '.newCard',
 
     events: {
         'submit form': 'saveCard'
+    },
+
+    initialize: function() {
+        this.render();
+    },
+
+    render: function() {
+        this.$el.html(Mustache.render(NewCardTemplate));
+
+        return this;
     },
 
     saveCard: function(event) {
