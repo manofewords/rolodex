@@ -1,0 +1,12 @@
+@import "theme.css";
+
+ul {
+    list-style: none;
+}
+
+li {
+    background: $color-2;
+    border-radius: $border-radius;
+    margin: 0.5em 0;
+    padding: 0.5em 1em;
+}

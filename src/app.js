@@ -4,6 +4,7 @@ require('reset-css/reset.css');
 require('./css/app.css');
 
 var CardsCollection = require('./collections/cards');
+var Cards = require('./views/cards');
 var NewCard = require('./views/newCard');
 
 var App = Backbone.View.extend({
@@ -12,6 +13,9 @@ var App = Backbone.View.extend({
     collection: new CardsCollection(),
 
     initialize: function() {
+        new Cards({
+            collection: this.collection
+        });
         new NewCard({
             collection: this.collection
         });
