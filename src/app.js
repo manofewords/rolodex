@@ -1,5 +1,7 @@
 var Backbone = require('backbone');
 
+require('reset-css/reset.css');
+
 var CardsCollection = require('./collections/cards');
 var NewCard = require('./views/newCard');
 
