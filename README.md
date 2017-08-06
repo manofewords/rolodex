@@ -27,7 +27,7 @@ I've chosen to use:
 - Mustache for HTML templating because that's what I've been using most recently. The 2 things I needed were partials and loops. Any other templating library with these features would have done it.
 - PostCSS with PreCSS for the CSS processing, to be able to use Sass-style variables.
 
-I've realized _after_ implementing it, that my address book entry form has the 2 fields "first name" and "last name", instead of the required "name" and "city". I kept my implementation however, because it actually makes the sorting a little trickier, and therefore the unit tests more interesting.
+I've realized _after_ implementing it, that my address book entry form has the 2 fields "first name" and "last name", instead of the required "name" and "city". I kept my implementation however, because it actually [makes the sorting a little trickier](https://github.com/manofewords/rolodex/commit/18fff9de2d0473a83a03fcaae3b01c889c712baf), and therefore the unit tests more interesting.
 
 Naming is hard. I've chosen to name an address book entry a "card" (mostly because mac OS' Contacts app uses "Cards", "vCards" and `.vcf` files). 
 
